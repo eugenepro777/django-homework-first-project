@@ -17,8 +17,7 @@ def log(func):
 
 @log
 def index(request):
-    paragraph_length = 3
-    text = lorem.paragraph(paragraph_length)
+    text = lorem.paragraph()
     html = f"""<h1 align="center">Один из моих первых Django-проектов</h1>    
     <p align="center">
         <b>{text}</b>
@@ -35,7 +34,7 @@ def index(request):
 @log
 def about(request):
     paragraph_length = 5
-    text = lorem.paragraph(paragraph_length)
+    text = lorem.paragraphs(paragraph_length)
     html = f"""<h1 align="center">Обо мне</h1>    
     <p align="center">
         {text}
