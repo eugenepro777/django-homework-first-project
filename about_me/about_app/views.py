@@ -3,6 +3,13 @@ import logging
 from django.http import HttpResponse
 from lorem_text import lorem
 
+"""
+Вместо импорта:
+from lorem_text import lorem
+можно использовать встроенный в утилиты Джанго lorem_ipsum:
+from django.utils import lorem_ipsum
+"""
+
 logger = logging.getLogger(__name__)
 
 
